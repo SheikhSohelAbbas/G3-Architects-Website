@@ -120,7 +120,17 @@ main{
 }
 /* responsive media query */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links{
+    .navbar, .nav-links, .tems{
+        flex-direction: column;
+    }
+
+    .tems-img-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* medium size device */
+@media screen and (min-width:576px) and (max-width: 992px) {
+    .tems{
         flex-direction: column;
     }
 }
